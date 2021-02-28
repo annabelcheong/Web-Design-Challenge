@@ -1,4 +1,93 @@
 
+.navbar {
+    padding:0px;
+    position: sticky; left: 100px;
+}
+
+.horizontal {
+    list-style-type: none; /*This is dot-points, or nothing */
+    /* margin: 5px 50px 5px 5px; top right bottom left */
+    /* width: max-content; width of the horizontal blocks */
+    /* padding: 0;    */
+    /* overflow: hidden;  */
+    /* text-align: right; */
+    /* background-position: 100% .4em; */
+    /* padding-right: .6em; */
+    /* padding:0px; */
+    /* background-color:white; */
+    position: sticky; left: 1400px; top: 0px;
+    margin: 0px;
+    padding-right:0px;
+   /* float: center; */
+   z-index: 4;
+}
+
+.horizontal > li {
+    float:left;   /*Goes through the list from top list# to bottom list# and shows it in website left to right */
+    /* position: relative; left: 500px; top: 0px; Left: -ve values for left, top: -ve values to go up */
+}
+
+/* Goes into the class that is horizontal list and ul. Editing the drop down list. */
+.horizontal li ul {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: sticky; 
+    width: 40%;
+    z-index:1;
+}
+/* Goes into the class that is horizontal list and li (list) */
+.horizontal li:hover ul {
+    display: block;
+    position: absolute;
+    z-index:2;
+
+}
+
+/* Goes into the class that is horizontal list, li (list) and a (link attribute) */
+.horizontal li a {
+    display: block; 
+    text-decoration:none; 
+    text-align:center; 
+    padding:15px 20px;
+    font-family: Garamond, serif; 
+    /* 'Courier New', Courier, monospace; */
+    font-size:10pt; 
+    font-weight:bold; 
+    color:#f0f3f0; 
+    /* text-transform:uppercase;  */
+    border:1px solid #607987; 
+    background-color:#538eb6;  
+    letter-spacing:.08em;
+    z-index: -1;
+  
+    
+}
+
+/* Goes into the class that is horizontal list and li (list) */
+/* a:hover style links on mouse-over */
+.horizontal li a:hover {
+    background-color:#6ba3bd; 
+    color:#e8eff3;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 ul{
     display: block;
     font-family: 'Courier New', Courier, monospace;
@@ -6,10 +95,29 @@ ul{
     text-align: right;
     padding: 10px;
     background-color:rgba(149, 182, 149, 0.664);
+}  */
 
+
+.bod{
+    background-color:rgba(190, 191, 199, 0.74);
 }
 
- 
+.left_half{
+    background-color: white;
+    /* padding: 30px 100px 150px 100px; */
+    padding:25px;
+    margin: 0px 40px 0px 0px;
+   
+}
+.right_half{
+    background-color:white;
+    /* padding: 30px 100px 150px 100px; */
+    padding: 25px;
+    margin: 0px -40px 0px 0px;
+  
+}
+
+
 /* ul {
         display: block;
         list-style-type: disc;
@@ -26,14 +134,27 @@ ul{
     }  */ 
 
 .m_heading{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Garamond, serif;
     font-size: 30px; 
     text-align: center;
+    font-weight: bold;  
 }
+
+.p_text{
+    font-family: Garamond, serif;
+    font-size: 15px; 
+    text-align: left;
+    font-weight: none;
+    }
+
+
+
+
 
 
 #main_image{
     width: 70%;
     float:left;
-
+    margin: 10px;
 }
+
