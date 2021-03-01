@@ -5,6 +5,7 @@
 .navbar {
     padding:0px;
     position: sticky; left: 100px;
+  
 }
 
 .horizontal {
@@ -234,27 +235,38 @@
 
 
 
-
-
-
-
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
- /* @media (max-width: 30%) { 
-    .left_vis {
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 800 pixels */
+@media (max-width: 800px) { 
+    /* .left_vis {
       width: 100%;
     }
   
     .post {
       margin-right: 30px;
       margin-left: 30px;
-    }
+    } */
   
-    .navbar ul {
-      visibility: hidden;
+    .m_col {
+        background-color: white;
+        margin: 30px;
+        text-align: center;
+        width:100%;
+        margin: 15px;
+        padding: 20px;    
+
     }
+
+    
+
+
+
+
+
+
+
+
   
-    #nav-select {
+    /* #nav-select {
       visibility: visible;
-    }
-  }  */
-  
+    } */
+  } 
