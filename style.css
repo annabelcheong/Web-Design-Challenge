@@ -52,10 +52,17 @@
     letter-spacing:.08em;
 }
 
+.nav_s_headings a{
+    color: #f0f3f0;
+    background-color: #6ba3bd; 
+    
+
+
+}
 /* Goes into the class that is horizontal list and li (list) */
 /* 'a:hover' : a link when user mouses over it */
 .nav_m_headings a:hover {
-    background-color:#6ba3bd; 
+    background-color:#3d4346; 
     color:#e8eff3;
 }
 
@@ -71,8 +78,10 @@
         display: block;
         position: relative;
         top:0px;
-        left: -300px;
-        /* margin: auto; */
+        left: -200px;
+        width: 150px;
+      
+        
     }
 
 
