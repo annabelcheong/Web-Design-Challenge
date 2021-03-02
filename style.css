@@ -2,70 +2,113 @@
 /* NAVIGATION BAR*/
 /*****************************/
 
-.navbar {
+/* .navbar {
     padding:0px;
     position: sticky; left: 100px;
   
-}
+} */
 
-.horizontal {
+.nav_m_headings {
     list-style-type: none; /*This is dot-points, or nothing */
-    position: sticky; left: 1400px; top: 0px;
+    position: sticky; 
+    left: 1400px; top: 0px;
     margin: 0px;
     padding-right:0px;
-    z-index: 4;
+    z-index: 1;
 }
 
-.horizontal > li {
-    float:left;   /*Goes through the list from top list# to bottom list# and shows it in website left to right */
+.nav_m_headings > li  {
+    float:left;   /*Goes through the first level of list (not sub-list) from top list# to bottom list# and shows it in website left to right */
     /* position: relative; left: 500px; top: 0px; Left: -ve values for left, top: -ve values to go up */
 }
 
+
+/********* Plot Sub-categories *******/
+
 /* Goes into the class that is horizontal list and ul. Editing the drop down list. */
-.horizontal li ul {
+.nav_m_headings > li > ul {
+    list-style-type: none;
     display: none;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    position: sticky; 
-    width: 40%;
-    z-index:1;
+    padding: 0px; 
+  
 }
 /* Goes into the class that is horizontal list and li (list) */
-.horizontal li:hover ul {
+.nav_m_headings li:hover ul {
     display: block;
-    position: absolute;
-    z-index:2;
-
+    position: absolute;    /* Prevents data below from shuffling downwards */
 }
 
-/* Goes into the class that is horizontal list, li (list) and a (link attribute) */
-.horizontal li a {
+/*Nav_m_headings which has a link attribute*/
+.nav_m_headings a {
     display: block; 
-    text-decoration:none; 
     text-align:center; 
     padding:15px 20px;
     font-family: Garamond, serif; 
-    /* 'Courier New', Courier, monospace; */
-    font-size:10pt; 
+    font-size:12px; 
     font-weight:bold; 
     color:#f0f3f0; 
-    /* text-transform:uppercase;  */
     border:1px solid #607987; 
     background-color:#538eb6;  
     letter-spacing:.08em;
-    z-index: -1;
-  
-    
 }
 
 /* Goes into the class that is horizontal list and li (list) */
-/* a:hover style links on mouse-over */
-.horizontal li a:hover {
+/* 'a:hover' : a link when user mouses over it */
+.nav_m_headings a:hover {
     background-color:#6ba3bd; 
     color:#e8eff3;
-    
 }
+
+@media (max-width: 800px) { 
+    .nav_m_headings li:hover ul {
+        display: block;
+        position: relative;
+        top:0px;
+        left:0%;
+    }   
+
+    .nav_m_headings > li{
+        display: block;
+        position: relative;
+        top:0px;
+        left: -300px;
+        /* margin: auto; */
+    }
+
+
+    /* .nav_m_headings li a  {
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* position: relative;} */
+    
+    .nav_m_headings li  {
+        float:none;  
+    }
+
+    /* .nav_m_headings ul li:hover > ul {
+        display: block;
+        position: absolute;
+        background-color: #CC0000;
+        margin-left: -77px;
+      } */
+ 
+
+
+ }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*****************************/
 /* BODY*/
