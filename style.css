@@ -10,20 +10,10 @@
 
 .horizontal {
     list-style-type: none; /*This is dot-points, or nothing */
-    /* margin: 5px 50px 5px 5px; top right bottom left */
-    /* width: max-content; width of the horizontal blocks */
-    /* padding: 0;    */
-    /* overflow: hidden;  */
-    /* text-align: right; */
-    /* background-position: 100% .4em; */
-    /* padding-right: .6em; */
-    /* padding:0px; */
-    /* background-color:white; */
     position: sticky; left: 1400px; top: 0px;
     margin: 0px;
     padding-right:0px;
-   /* float: center; */
-   z-index: 4;
+    z-index: 4;
 }
 
 .horizontal > li {
@@ -109,6 +99,13 @@
     height: 80%;
     align-content: center;
     background-color:white;
+}
+
+/* a:hover style links on mouse-over */
+.vis_img:hover, .main_img:hover{
+    /* background-color:#6ba3bd; #e8eff3;
+    color:#e8eff3; */
+    box-shadow: 0 0 2px 1px #6ba3bd;
 }
 
 /* .right_half_bot_imgs{
