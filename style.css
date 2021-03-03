@@ -2,12 +2,6 @@
 /* NAVIGATION BAR*/
 /*****************************/
 
-/* .navbar {
-    padding:0px;
-    position: sticky; left: 100px;
-  
-} */
-
 .nav_m_headings {
     list-style-type: none; /*This is dot-points, or nothing */
     position: sticky; 
@@ -22,16 +16,13 @@
     /* position: relative; left: 500px; top: 0px; Left: -ve values for left, top: -ve values to go up */
 }
 
-
-/********* Plot Sub-categories *******/
-
 /* Goes into the class that is horizontal list and ul. Editing the drop down list. */
 .nav_m_headings > li > ul {
     list-style-type: none;
     display: none;
     padding: 0px; 
-  
 }
+
 /* Goes into the class that is horizontal list and li (list) */
 .nav_m_headings li:hover ul {
     display: block;
@@ -55,10 +46,8 @@
 .nav_s_headings a{
     color: #f0f3f0;
     background-color: #6ba3bd; 
-    
-
-
 }
+
 /* Goes into the class that is horizontal list and li (list) */
 /* 'a:hover' : a link when user mouses over it */
 .nav_m_headings a:hover {
@@ -79,48 +68,16 @@
         position: relative;
         top:0px;
         left: -200px;
-        width: 150px;
-      
-        
+        width: 150px;        
     }
 
-
-    /* .nav_m_headings li a  {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* position: relative;} */
-    
     .nav_m_headings li  {
         float:none;  
     }
-
-    /* .nav_m_headings ul li:hover > ul {
-        display: block;
-        position: absolute;
-        background-color: #CC0000;
-        margin-left: -77px;
-      } */
- 
-
-
- }  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
 /*****************************/
-/* BODY*/
+/* HOME PAGE (index.html and generic theme eg. background-color, pargraph fonts) */
 /*****************************/
 
 .bod{
@@ -132,6 +89,7 @@
     padding: 25px;
     margin: 20px 10px 20px 0px;
 }
+
 .right_half{
     background-color:white;
     padding: 25px;
@@ -139,12 +97,12 @@
 }
 
 @media (max-width: 600px){ 
-.left_half {
-    margin-left: -40px;
+    .left_half {
+        margin-left: -40px;
+        }
     }
-}
-
-.right_half_top_imgs{
+    
+.right_half_imgs{
     display: flex;
     flex-direction: row;
     width: auto;
@@ -155,83 +113,8 @@
 
 /* a:hover style links on mouse-over */
 .vis_img:hover, .main_img:hover{
-    /* background-color:#6ba3bd; #e8eff3;
-    color:#e8eff3; */
     box-shadow: 0 0 2px 1px #6ba3bd;
 }
-
-/* .right_half_bot_imgs{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    /* height: 30%; */
-    /* align-content: center;
-    background-color:white;
-} */ 
-
-/* @media(max-width: 600px){
-    .right_half_top_imgs .right_half_bot_imgs {
-        display: flex;
-        flex-direction: row;
-        height:
-        width:25%;
-        align-content: center;
-    }
-
-
-
-
-}  */
-
-/* @media(max-width: 600px){ 
-    .right_half{
-        display: flex;
-        flex-direction: row;
-      }
-
-    .container__col-1{ 
-       width: 25%;
-    }
-    .container__col-2{
-       width: 25%;
-    }
-} */
-
-
-
-
- /* .right_half_top_imgs {
-    height:200px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-} */
-
-/* 
-.right_half_top_imgs{
-    display: block;
-    justify-content: center;
-
-} */
-
-/* .right_half_bot_imgs {
-    height:200px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-} */
-
-
-/* @media (max-width: 600px){ 
-.right_half_top_imgs {
-    display: flex;
-    flex-direction: column;
-  
-}
-} */
-
 
 .m_heading{
     color: rgb(99, 148, 113);
@@ -255,24 +138,17 @@
     margin: 10px;
 }
 
-
 /*****************************/
-/* DATAFRAME TABLE */
+/* DATA PAGE (data.html) */ 
 /*****************************/
 
 #df_headings{
-    align: center;
+    text-align: center;
     font-family: Garamond, serif;
     font-size: 15px;
-    /* text-transform: uppercase;   */
-
 }
 
 .df{
-    /* font-family: Garamond, serif; */
-    /* font-size: 10px;  */
-    /* text-align: center; */
-    /* font-weight: bold; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -280,10 +156,10 @@
     font-size: 15px;
 }
 
+/*****************************/
+/* COMPARISON PAGE (comparison.html) */
+/*****************************/
 
-/*****************************/
-/* COMPARISON PAGE */
-/*****************************/
 .s_heading{
     text-align: center;
     color: rgb(99, 148, 113);
@@ -291,13 +167,12 @@
     font-size: 20px;
     font-weight: bold;
     padding-top: 20px;
-
 }
 
 /*****************************/
-/* VISUALISATION PAGE/S */
+/* VISUALISATION PAGE/S (visualisation-page1.html, visualisatoin-page2.html, 
+visualisation-page3.html, visualisation-page4.html) */
 /*****************************/
-
 
 .v_heading{
     color: rgb(99, 148, 113);
@@ -318,8 +193,6 @@
 .left_vis{
     background-color: white;
     margin: 30px;
-    /* display: inline-block;
-    float: left; */
     max-width: 800px;
     width:60%;
     margin: auto;
@@ -336,7 +209,7 @@
     margin-right: auto;
     width: 60%;
     font-weight: none;
-    }
+}
 
 .right_vis{
     background-color: white;
@@ -352,7 +225,6 @@
     display: inline-block;
     float: left;
     width:100%;
-/*  max-width: 100%; */
     margin-left: auto;
     margin-right: auto;   
 }
@@ -361,24 +233,11 @@
     display: inline-block;
     float: left;
     width:100%;
-    /* max-width: 100%; */
     margin-left: auto;
     margin-right: auto;   
 }
 
-
-
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 800 pixels */
 @media (max-width: 800px) { 
-    /* .left_vis {
-      width: 100%;
-    }
-  
-    .post {
-      margin-right: 30px;
-      margin-left: 30px;
-    } */
-  
     .m_col {
         background-color: white;
         margin: 30px;
@@ -386,20 +245,5 @@
         width:100%;
         margin: 15px;
         padding: 20px;    
-
     }
-
-    
-
-
-
-
-
-
-
-
-  
-    /* #nav-select {
-      visibility: visible;
-    } */
-  } 
+}

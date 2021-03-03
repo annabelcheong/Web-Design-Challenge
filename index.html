@@ -3,117 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
+
+  <!-- *************** STYLESHEETS ****************** -->
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+<!-- ***** -->
 <body class="bod"> 
+
+<div class="container content">
 
 <!-- /************** NAVIGATION BAR ******************/  -->
 
-
-    <div class="container content">
-        <div class="row">
-            
-               
-
-                <div class=" col-md-12 navbar">
+    <div class="row">
         
-                    <ul class="nav_m_headings">               
-                        <li><a href="#">Plots</a>
-                            <ul class=nav_s_headings>
-                                <li><a href="visualisation-page1.html">Latitude vs. X</a></li>
-                                <li><a href="visualisation-page2.html">Latitude vs. Humidity</a></li>
-                                <li><a href="visualisation-page3.html">Latitude vs. Cloudiness</a></li>
-                                <li><a href="visualisation-page4.html">Latitude vs. Wind Speed</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="comparison.html">Comparison</a></li>
-                        <li><a href="data.html">Data</a></li>        
+        <div class="col-md-12 navbar">
+            <ul class="nav_m_headings">               
+                <li><a href="#">Plots</a>
+                    <ul class=nav_s_headings>
+                        <li><a href="visualisation-page1.html">Latitude vs. X</a></li>
+                        <li><a href="visualisation-page2.html">Latitude vs. Humidity</a></li>
+                        <li><a href="visualisation-page3.html">Latitude vs. Cloudiness</a></li>
+                        <li><a href="visualisation-page4.html">Latitude vs. Wind Speed</a></li>
                     </ul>
-                   
-                </div> 
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>        
+            </ul> 
+        </div> 
                     
-           
-
 <!-- /************** MAIN CONTENT ******************/  -->
 
-            <div class="col-lg-7 left_half rounded">
-                <h1 class="m_heading">Summary: Latitude vs. X <hr> </h1>
-                <img id="main_image" src="WebVisualizations/assets/Fig1.png" class="img-fluid" alt="City Lat Vs Max Temp" />
-                <div class=p_text>The purpose of this project was to analyse how the weather changes 
-                    as you get closer to the equator. To accomplish this analysis, the OpenWeatherMap API 
-                    was used to assemble a dataset on over 500 cities.
-                     <br>
-                     After assembling the dataset, we used Matplotlib to plot various aspects 
-                     of the weather vs. latitude. Factors we looked at included: 
-                     temperature, cloudiness, wind speed and humidity. 
-                     This site provides the source data and visualizations created as part
-                      of the analysis, as well as explanations and descriptions of any 
-                      trends and correlations witnessed.
+        <div class="col-lg-7 left_half rounded">
+            <h1 class="m_heading">Summary: Latitude vs. X <hr> </h1>
+            <img id="main_image" src="WebVisualizations/assets/Fig1.png" class="img-fluid" alt="City Lat Vs Max Temp" />
+            <div class=p_text>The purpose of this project was to analyse how the weather changes 
+                as you get closer to the equator. To accomplish this analysis, the OpenWeatherMap API 
+                was used to assemble a dataset on over 500 cities.
+                    <br>
+                    After assembling the dataset, we used Matplotlib to plot various aspects 
+                    of the weather vs. latitude. Factors we looked at included: 
+                    temperature, cloudiness, wind speed and humidity. 
+                    This site provides the source data and visualizations created as part
+                    of the analysis, as well as explanations and descriptions of any 
+                    trends and correlations witnessed.
+            </div>
+        </div>      <!-- /*** Left Half Closing div ****/ -->
+
+
+        <div class="col-lg-5 right_half rounded">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                    <h2 class="m_heading">Visualizations <hr> </h2>
+                </div>
+            </div>   
+
+            <div class="row right_half_imgs">
+
+                <div class="col-lg-6 col-sm-3 col-3">
+                    <figure>
+                    <a target="_self" href="visualisation-page1.html">
+                        <img src="WebVisualizations/assets/Fig1.png" class="img-fluid main_img" alt="City Lat vs Max Temp graph" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6 col-sm-3 col-3">                       
+                    <figure>
+                        <a target="_self" href="visualisation-page2.html">
+                        <img src="WebVisualizations/assets/Fig2.png" class="img-fluid main_img" alt="City Lat vs Humidity graph" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6 col-sm-3 col-3">
+                    <figure>
+                        <a target="_self" href="visualisation-page3.html">
+                        <img src="WebVisualizations/assets/Fig3.png" class="img-fluid main_img" alt="City Lat vs Cloudiness graph" /></a>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6 col-sm-3 col-3">
+                    <figure>
+                        <a target="_self" href="visualisation-page4.html">
+                        <img src="WebVisualizations/assets/Fig4.png" class="img-fluid main_img" alt="City Lat vs Wind Speed graph" /></a>
+                    </figure>
                 </div>
             </div>
-
-
-            <div class="col-lg-5 right_half rounded">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-12">
-                        <h2 class="m_heading">Visualizations <hr> </h2>
-                    </div>
-                </div>
-
-                <div class="row right_half_top_imgs">
-
-                    <div class="col-lg-6 col-sm-3 col-3">
-                        <figure>
-                        <a target="_self" href="visualisation-page1.html">
-                            <img src="WebVisualizations/assets/Fig1.png" class="img-fluid main_img" alt="City Lat vs Max Temp graph" /></a>
-                        </figure>
-                    </div>
-
-                    <div class="col-lg-6 col-sm-3 col-3">                       
-                        <figure>
-                            <a target="_self" href="visualisation-page2.html">
-                            <img src="WebVisualizations/assets/Fig2.png" class="img-fluid main_img" alt="City Lat vs Humidity graph" /></a>
-                        </figure>
-                    </div>
-                <!-- </div> -->
-
-                <!-- <div class="row right_half_bot_imgs"> -->
-
-                    <div class="col-lg-6 col-sm-3 col-3">
-                        <figure>
-                            <a target="_self" href="visualisation-page3.html">
-                            <img src="WebVisualizations/assets/Fig3.png" class="img-fluid main_img" alt="City Lat vs Cloudiness graph" /></a>
-                        </figure>
-                    </div>
-
-                    <div class="col-lg-6 col-sm-3 col-3">
-                        <figure>
-                            <a target="_self" href="visualisation-page4.html">
-                            <img src="WebVisualizations/assets/Fig4.png" class="img-fluid main_img" alt="City Lat vs Wind Speed graph" /></a>
-                        </figure>
-                    </div>
-                </div>
-                
-            </div> 
             
-        </div>   
+        </div>  <!-- /*** Right Half Closing div ****/ -->
+            
+    </div>   
         
-    </div>
+<!-- ********************************************************************* -->
 
-
-
-    
+</div>
 
 </body>
-
-
-
-
-
-
-
-
 
 </html>
